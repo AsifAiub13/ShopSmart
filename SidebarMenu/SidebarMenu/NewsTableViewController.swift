@@ -18,11 +18,11 @@ class NewsTableViewController: UITableViewController {
         if revealViewController() != nil {
 //            revealViewController().rearViewRevealWidth = 62
             menuButton.target = revealViewController()
-            menuButton.action = "revealToggle:"
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
 
             revealViewController().rightViewRevealWidth = 150
             extraButton.target = revealViewController()
-            extraButton.action = "rightRevealToggle:"
+            extraButton.action = #selector(SWRevealViewController.rightRevealToggle(_:))
 
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             
