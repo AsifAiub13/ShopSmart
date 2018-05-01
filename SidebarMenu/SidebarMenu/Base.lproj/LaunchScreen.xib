@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,29 +18,59 @@
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2018 SerajeOrg. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
                     <rect key="frame" x="20" y="439" width="441" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="5Ck-fB-rvO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ShopSmart" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="140" width="441" height="43"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O'GRO" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                    <rect key="frame" x="20" y="251" width="441" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="VBF-9Z-FhI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="CompanyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="qYU-7W-QbX">
+                    <rect key="frame" x="120" y="91" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="fC8-BM-7W4"/>
+                        <constraint firstAttribute="width" constant="240" id="rq1-m1-nwR"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Smart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="501-h2-aBx">
+                    <rect key="frame" x="86" y="296" width="309" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="t5S-Qd-kZk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                    <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>
-                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstItem="qYU-7W-QbX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4gn-ZX-efQ"/>
+                <constraint firstItem="501-h2-aBx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="86" id="APW-x2-bTt"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="IWD-Uu-yey"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" symbolic="YES" id="Vj5-fu-ap4"/>
+                <constraint firstItem="qYU-7W-QbX" firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="duu-xq-rnY"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="8ie-xW-0ye" secondAttribute="leading" id="h2t-PP-BIf"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="trailing" secondItem="8ie-xW-0ye" secondAttribute="trailing" id="ix8-od-N7R"/>
+                <constraint firstItem="qYU-7W-QbX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="91" id="mcK-K7-SrL"/>
+                <constraint firstItem="501-h2-aBx" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="2" id="qYg-Wn-4y4"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="centerX" secondItem="501-h2-aBx" secondAttribute="centerX" id="tqo-uE-jpf"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="qYU-7W-QbX" secondAttribute="bottom" constant="32" id="yOo-3Y-Chf"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
+    <resources>
+        <image name="CompanyLogo" width="150" height="104"/>
+    </resources>
 </document>

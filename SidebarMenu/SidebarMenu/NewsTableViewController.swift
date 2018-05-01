@@ -14,9 +14,26 @@ class NewsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //var check : Bool = UserDefaults.standard.bool(forKey: "LOGGED_IN")
+        //if UserDefaults.standard.bool(forKey: "LOGGED_IN") == false ||  UserDefaults.standard.bool(forKey: "LOGGED_IN") == nil{
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let controller = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+//            self.present(controller, animated: true, completion: nil)
+//
+//            // Safe Present
+//            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController
+//            {
+//                present(vc, animated: true, completion: nil)
+//
+//            }
+        let newView2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+  
+        let navCtrl = UINavigationController(rootViewController: newView2)
+        self.present(navCtrl, animated: true, completion: nil)
+        //}
+        
+        
         if revealViewController() != nil {
-//            revealViewController().rearViewRevealWidth = 62
             menuButton.target = revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
 
@@ -61,13 +78,13 @@ class NewsTableViewController: UITableViewController {
             cell.postImageView.image = UIImage(named: "custom-segue-featured-1024")
             cell.postTitleLabel.text = "Building a Chat App in Swift Using Multipeer Connectivity Framework"
             cell.authorLabel.text = "Gabriel Theodoropoulos"
-            cell.authorImageView.image = UIImage(named: "appcoda-300")
+            cell.authorImageView.image = UIImage(named: "SerajeOrg-300")
             
         } else {
             cell.postImageView.image = UIImage(named: "webkit-featured")
             cell.postTitleLabel.text = "A Beginner’s Guide to Animated Custom Segues in iOS 8"
             cell.authorLabel.text = "Gabriel Theodoropoulos"
-            cell.authorImageView.image = UIImage(named: "appcoda-300")
+            cell.authorImageView.image = UIImage(named: "SerajeOrg-300")
             
         }
         

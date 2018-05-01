@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DE7CE2B20977B5D00BCD8DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7CE2A20977B5D00BCD8DC /* LoginViewController.swift */; };
+		8DE7CE2D20977F9A00BCD8DC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7CE2C20977F9A00BCD8DC /* SignInViewController.swift */; };
+		8DE7CE2F20977FB900BCD8DC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7CE2E20977FB900BCD8DC /* SignUpViewController.swift */; };
+		8DE7CE3120978CEC00BCD8DC /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7CE3020978CEC00BCD8DC /* VerificationViewController.swift */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
 		F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47029F91A7F27DB00E30A3C /* Main.storyboard */; };
 		F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47029FC1A7F27DB00E30A3C /* Images.xcassets */; };
@@ -32,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8DE7CE2A20977B5D00BCD8DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8DE7CE2C20977F9A00BCD8DC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		8DE7CE2E20977FB900BCD8DC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8DE7CE3020978CEC00BCD8DC /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		F47029F01A7F27DB00E30A3C /* SidebarMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47029F41A7F27DB00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47029F51A7F27DB00E30A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +79,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DE7CE3220978F6A00BCD8DC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		F47029E71A7F27DB00E30A3C = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +108,7 @@
 		F47029F21A7F27DB00E30A3C /* SidebarMenu */ = {
 			isa = PBXGroup;
 			children = (
+				8DE7CE3220978F6A00BCD8DC /* Images */,
 				F4D750141BD38E56009E1003 /* SWRevealViewController */,
 				F47029F51A7F27DB00E30A3C /* AppDelegate.swift */,
 				F47029F91A7F27DB00E30A3C /* Main.storyboard */,
@@ -104,6 +120,10 @@
 				F491E74B1A7F4C630026528E /* NewsTableViewCell.swift */,
 				F491E7521A7F7DF20026528E /* MapViewController.swift */,
 				F491E7541A7F7E010026528E /* PhotoViewController.swift */,
+				8DE7CE2A20977B5D00BCD8DC /* LoginViewController.swift */,
+				8DE7CE2C20977F9A00BCD8DC /* SignInViewController.swift */,
+				8DE7CE2E20977FB900BCD8DC /* SignUpViewController.swift */,
+				8DE7CE3020978CEC00BCD8DC /* VerificationViewController.swift */,
 			);
 			path = SidebarMenu;
 			sourceTree = "<group>";
@@ -189,10 +209,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = AppCoda;
+				ORGANIZATIONNAME = SerajeOrg;
 				TargetAttributes = {
 					F47029EF1A7F27DB00E30A3C = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = D2V899229R;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
@@ -253,6 +274,10 @@
 				F4702A181A7F351C00E30A3C /* MenuController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
 				F491E74C1A7F4C630026528E /* NewsTableViewCell.swift in Sources */,
+				8DE7CE3120978CEC00BCD8DC /* VerificationViewController.swift in Sources */,
+				8DE7CE2F20977FB900BCD8DC /* SignUpViewController.swift in Sources */,
+				8DE7CE2B20977B5D00BCD8DC /* LoginViewController.swift in Sources */,
+				8DE7CE2D20977F9A00BCD8DC /* SignInViewController.swift in Sources */,
 				F491E7531A7F7DF20026528E /* MapViewController.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,
 				F491E7551A7F7E010026528E /* PhotoViewController.swift in Sources */,
@@ -403,7 +428,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = D2V899229R;
 				INFOPLIST_FILE = SidebarMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.serajeapp.ShopSmart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,7 +445,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = D2V899229R;
 				INFOPLIST_FILE = SidebarMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.serajeapp.ShopSmart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
