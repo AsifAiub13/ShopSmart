@@ -26,6 +26,7 @@ class NewsTableViewController: UITableViewController {
 //                present(vc, animated: true, completion: nil)
 //
 //            }
+        
         let newView2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
   
         let navCtrl = UINavigationController(rootViewController: newView2)
@@ -45,6 +46,7 @@ class NewsTableViewController: UITableViewController {
             
         
         }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,7 +63,7 @@ class NewsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 3
+        return 8
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -69,71 +71,120 @@ class NewsTableViewController: UITableViewController {
         
         // Configure the cell...
         if indexPath.row == 0 {
-            cell.postImageView.image = UIImage(named: "watchkit-intro")
-            cell.postTitleLabel.text = "WatchKit Introduction: Building a Simple Guess Game"
-            cell.authorLabel.text = "Asif Seraje"
-            cell.authorImageView.image = UIImage(named: "author")
+            cell.postImageView.image = UIImage(named: "CompanyLogo")
+            cell.postTitleLabel.text = "Dairy & Eggs"
+            cell.authorLabel.text = "Dairy & Eggs"
+            cell.authorImageView.image = UIImage(named: "CompanyLogo")
             
-        } else if indexPath.row == 1 {
-            cell.postImageView.image = UIImage(named: "custom-segue-featured-1024")
-            cell.postTitleLabel.text = "Building a Chat App in Swift Using Multipeer Connectivity Framework"
-            cell.authorLabel.text = "Gabriel Theodoropoulos"
-            cell.authorImageView.image = UIImage(named: "SerajeOrg-300")
+        }else if indexPath.row == 1 {
+            cell.postImageView.image = UIImage(named: "CompanyLogo")
+            cell.postTitleLabel.text = "Bread"
+            cell.authorLabel.text = "Bread"
+            cell.authorImageView.image = UIImage(named: "CompanyLogo")
             
-        } else {
-            cell.postImageView.image = UIImage(named: "webkit-featured")
-            cell.postTitleLabel.text = "A Beginner’s Guide to Animated Custom Segues in iOS 8"
-            cell.authorLabel.text = "Gabriel Theodoropoulos"
-            cell.authorImageView.image = UIImage(named: "SerajeOrg-300")
+        }else if indexPath.row == 2 {
+            cell.postImageView.image = UIImage(named: "CompanyLogo")
+            cell.postTitleLabel.text = "Vegetables & Fruits"
+            cell.authorLabel.text = "Vegetables & Fruits"
+            cell.authorImageView.image = UIImage(named: "CompanyLogo")
+            
+        }else if indexPath.row == 3 {
+            cell.postImageView.image = UIImage(named: "CompanyLogo")
+            cell.postTitleLabel.text = "Food Cupboard"
+            cell.authorLabel.text = "Food Cupboard"
+            cell.authorImageView.image = UIImage(named: "CompanyLogo")
+            
+        }else if indexPath.row == 4 {
+            cell.postImageView.image = UIImage(named: "CompanyLogo")
+            cell.postTitleLabel.text = "Frozen Food"
+            cell.authorLabel.text = "Frozen Food"
+            cell.authorImageView.image = UIImage(named: "CompanyLogo")
+            
+        }else if indexPath.row == 5 {
+            cell.postImageView.image = UIImage(named: "CompanyLogo")
+            cell.postTitleLabel.text = "Meat"
+            cell.authorLabel.text = "Meat"
+            cell.authorImageView.image = UIImage(named: "CompanyLogo")
+            
+        }else if indexPath.row == 6 {
+            cell.postImageView.image = UIImage(named: "CompanyLogo")
+            cell.postTitleLabel.text = "Drinks & Beverages"
+            cell.authorLabel.text = "Drinks & Beverages"
+            cell.authorImageView.image = UIImage(named: "CompanyLogo")
+            
+        }else if indexPath.row == 7 {
+            cell.postImageView.image = UIImage(named: "CompanyLogo")
+            cell.postTitleLabel.text = "Snacks"
+            cell.authorLabel.text = "Snacks"
+            cell.authorImageView.image = UIImage(named: "CompanyLogo")
+            
+        }else {
+            return UITableViewCell()
             
         }
         
         return cell
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0{
+            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DairyAndEggsViewController") as? DairyAndEggsViewController {
+                if let navigator = navigationController {
+                    navigator.pushViewController(viewController, animated: true)
+                }
+            }
+        }else if indexPath.row == 1{
+            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BreadViewController") as? BreadViewController {
+                if let navigator = navigationController {
+                    navigator.pushViewController(viewController, animated: true)
+                }
+            }
+            
+        }else if indexPath.row == 2{
+            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VegetablesAndFruitsViewController") as? VegetablesAndFruitsViewController {
+                if let navigator = navigationController {
+                    navigator.pushViewController(viewController, animated: true)
+                }
+            }
+            
+        }else if indexPath.row == 3{
+            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FoodCupboardViewController") as? FoodCupboardViewController {
+                if let navigator = navigationController {
+                    navigator.pushViewController(viewController, animated: true)
+                }
+            }
+            
+        }else if indexPath.row == 4{
+            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FrozenFoodViewController") as? FrozenFoodViewController {
+                if let navigator = navigationController {
+                    navigator.pushViewController(viewController, animated: true)
+                }
+            }
+            
+        }else if indexPath.row == 5{
+            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MeatViewController") as? MeatViewController {
+                if let navigator = navigationController {
+                    navigator.pushViewController(viewController, animated: true)
+                }
+            }
+            
+        }else if indexPath.row == 6{
+            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DrinkAndBeveragesViewController") as? DrinkAndBeveragesViewController {
+                if let navigator = navigationController {
+                    navigator.pushViewController(viewController, animated: true)
+                }
+            }
+            
+        }else if indexPath.row == 7{
+            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SnacksViewController") as? SnacksViewController {
+                if let navigator = navigationController {
+                    navigator.pushViewController(viewController, animated: true)
+                }
+            }
+            
+        }else{
+            return
+        }
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D886D9D2099BE2200EE6FE6 /* DairyAndEggsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D886D9C2099BE2200EE6FE6 /* DairyAndEggsViewController.swift */; };
+		8D886D9F2099C59000EE6FE6 /* BreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D886D9E2099C59000EE6FE6 /* BreadViewController.swift */; };
+		8D886DA12099C5AC00EE6FE6 /* VegetablesAndFruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D886DA02099C5AC00EE6FE6 /* VegetablesAndFruitsViewController.swift */; };
+		8D886DA32099C5C700EE6FE6 /* FoodCupboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D886DA22099C5C700EE6FE6 /* FoodCupboardViewController.swift */; };
+		8D886DA52099C5DB00EE6FE6 /* FrozenFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D886DA42099C5DB00EE6FE6 /* FrozenFoodViewController.swift */; };
+		8D886DA72099C5E400EE6FE6 /* MeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D886DA62099C5E400EE6FE6 /* MeatViewController.swift */; };
+		8D886DA92099C60600EE6FE6 /* DrinkAndBeveragesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D886DA82099C60600EE6FE6 /* DrinkAndBeveragesViewController.swift */; };
+		8D886DAB2099C61100EE6FE6 /* SnacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D886DAA2099C61100EE6FE6 /* SnacksViewController.swift */; };
 		8DE7CE2B20977B5D00BCD8DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7CE2A20977B5D00BCD8DC /* LoginViewController.swift */; };
 		8DE7CE2D20977F9A00BCD8DC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7CE2C20977F9A00BCD8DC /* SignInViewController.swift */; };
 		8DE7CE2F20977FB900BCD8DC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7CE2E20977FB900BCD8DC /* SignUpViewController.swift */; };
@@ -36,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D886D9C2099BE2200EE6FE6 /* DairyAndEggsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DairyAndEggsViewController.swift; sourceTree = "<group>"; };
+		8D886D9E2099C59000EE6FE6 /* BreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadViewController.swift; sourceTree = "<group>"; };
+		8D886DA02099C5AC00EE6FE6 /* VegetablesAndFruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetablesAndFruitsViewController.swift; sourceTree = "<group>"; };
+		8D886DA22099C5C700EE6FE6 /* FoodCupboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCupboardViewController.swift; sourceTree = "<group>"; };
+		8D886DA42099C5DB00EE6FE6 /* FrozenFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrozenFoodViewController.swift; sourceTree = "<group>"; };
+		8D886DA62099C5E400EE6FE6 /* MeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatViewController.swift; sourceTree = "<group>"; };
+		8D886DA82099C60600EE6FE6 /* DrinkAndBeveragesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAndBeveragesViewController.swift; sourceTree = "<group>"; };
+		8D886DAA2099C61100EE6FE6 /* SnacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacksViewController.swift; sourceTree = "<group>"; };
 		8DE7CE2A20977B5D00BCD8DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8DE7CE2C20977F9A00BCD8DC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8DE7CE2E20977FB900BCD8DC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +95,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D886D9B2099BDD600EE6FE6 /* HomeScreenViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D886D9C2099BE2200EE6FE6 /* DairyAndEggsViewController.swift */,
+				8D886D9E2099C59000EE6FE6 /* BreadViewController.swift */,
+				8D886DA02099C5AC00EE6FE6 /* VegetablesAndFruitsViewController.swift */,
+				8D886DA22099C5C700EE6FE6 /* FoodCupboardViewController.swift */,
+				8D886DA42099C5DB00EE6FE6 /* FrozenFoodViewController.swift */,
+				8D886DA62099C5E400EE6FE6 /* MeatViewController.swift */,
+				8D886DA82099C60600EE6FE6 /* DrinkAndBeveragesViewController.swift */,
+				8D886DAA2099C61100EE6FE6 /* SnacksViewController.swift */,
+			);
+			name = HomeScreenViewControllers;
+			sourceTree = "<group>";
+		};
 		8DE7CE3220978F6A00BCD8DC /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +139,7 @@
 		F47029F21A7F27DB00E30A3C /* SidebarMenu */ = {
 			isa = PBXGroup;
 			children = (
+				8D886D9B2099BDD600EE6FE6 /* HomeScreenViewControllers */,
 				8DE7CE3220978F6A00BCD8DC /* Images */,
 				F4D750141BD38E56009E1003 /* SWRevealViewController */,
 				F47029F51A7F27DB00E30A3C /* AppDelegate.swift */,
@@ -271,14 +303,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4D750181BD38F0C009E1003 /* SWRevealViewController.m in Sources */,
+				8D886DA12099C5AC00EE6FE6 /* VegetablesAndFruitsViewController.swift in Sources */,
 				F4702A181A7F351C00E30A3C /* MenuController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
+				8D886DA72099C5E400EE6FE6 /* MeatViewController.swift in Sources */,
+				8D886DA52099C5DB00EE6FE6 /* FrozenFoodViewController.swift in Sources */,
 				F491E74C1A7F4C630026528E /* NewsTableViewCell.swift in Sources */,
 				8DE7CE3120978CEC00BCD8DC /* VerificationViewController.swift in Sources */,
 				8DE7CE2F20977FB900BCD8DC /* SignUpViewController.swift in Sources */,
 				8DE7CE2B20977B5D00BCD8DC /* LoginViewController.swift in Sources */,
 				8DE7CE2D20977F9A00BCD8DC /* SignInViewController.swift in Sources */,
+				8D886DA32099C5C700EE6FE6 /* FoodCupboardViewController.swift in Sources */,
+				8D886DA92099C60600EE6FE6 /* DrinkAndBeveragesViewController.swift in Sources */,
+				8D886D9F2099C59000EE6FE6 /* BreadViewController.swift in Sources */,
+				8D886D9D2099BE2200EE6FE6 /* DairyAndEggsViewController.swift in Sources */,
 				F491E7531A7F7DF20026528E /* MapViewController.swift in Sources */,
+				8D886DAB2099C61100EE6FE6 /* SnacksViewController.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,
 				F491E7551A7F7E010026528E /* PhotoViewController.swift in Sources */,
 			);
