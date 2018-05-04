@@ -46,6 +46,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func btnContinueAsGuestPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
+        UserDefaults.standard.set(true, forKey: "LOGGEDIN")
     }
     
 }

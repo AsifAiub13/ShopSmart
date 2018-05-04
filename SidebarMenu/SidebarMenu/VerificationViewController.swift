@@ -31,6 +31,7 @@ class VerificationViewController: UIViewController {
     
     @IBAction func btnVerifyPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
+        UserDefaults.standard.set(true, forKey: "LOGGEDIN")
     }
     @IBAction func btnCancelPressed(_ sender: UIButton) {
         for controller in self.navigationController!.viewControllers as Array {

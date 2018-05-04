@@ -8,7 +8,8 @@
 
 import UIKit
 
-class NewsTableViewController: UITableViewController {
+class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate {
+    
     @IBOutlet var menuButton:UIBarButtonItem!
     @IBOutlet var extraButton:UIBarButtonItem!
 
@@ -26,12 +27,12 @@ class NewsTableViewController: UITableViewController {
 //                present(vc, animated: true, completion: nil)
 //
 //            }
-        
-        let newView2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-  
-        let navCtrl = UINavigationController(rootViewController: newView2)
-        self.present(navCtrl, animated: true, completion: nil)
-        //}
+        if UserDefaults.standard.bool(forKey: "LOGGEDIN") == false{
+            let newView2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            
+            let navCtrl = UINavigationController(rootViewController: newView2)
+            self.present(navCtrl, animated: true, completion: nil)
+        }
         
         
         if revealViewController() != nil {
@@ -63,14 +64,14 @@ class NewsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 8
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath) as! NewsTableViewCell
         
         // Configure the cell...
-        if indexPath.row == 0 {
+        /*if indexPath.row == 0 {
             cell.postImageView.image = UIImage(named: "CompanyLogo")
             cell.postTitleLabel.text = "Dairy & Eggs"
             cell.authorLabel.text = "Dairy & Eggs"
@@ -121,13 +122,76 @@ class NewsTableViewController: UITableViewController {
         }else {
             return UITableViewCell()
             
-        }
-        
+        }*/
+        cell.newsCellDelegate = self
         return cell
     }
     
+    func btnBreadPressed() {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BreadViewController") as? BreadViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
+    
+    func btnVegetablesPressed() {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VegetablesAndFruitsViewController") as? VegetablesAndFruitsViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
+    
+    func btnFoodCupboardPressed() {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FoodCupboardViewController") as? FoodCupboardViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
+    
+    func btnFrozenFoodPressed() {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FrozenFoodViewController") as? FrozenFoodViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
+    
+    func btnMeatPressed() {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MeatViewController") as? MeatViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
+    
+    func btnDrinkPressed() {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DrinkAndBeveragesViewController") as? DrinkAndBeveragesViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
+    
+    func btnSnacksPressed() {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SnacksViewController") as? SnacksViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
+    
+    func btnDairyPressed() {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DairyAndEggsViewController") as? DairyAndEggsViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0{
+        /*if indexPath.row == 0{
             if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DairyAndEggsViewController") as? DairyAndEggsViewController {
                 if let navigator = navigationController {
                     navigator.pushViewController(viewController, animated: true)
@@ -184,7 +248,7 @@ class NewsTableViewController: UITableViewController {
             
         }else{
             return
-        }
+        }*/
     }
 
 }

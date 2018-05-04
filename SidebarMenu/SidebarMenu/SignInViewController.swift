@@ -50,6 +50,7 @@ class SignInViewController: UIViewController,UITextFieldDelegate {
     }
     @IBAction func btnLoginPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
+        UserDefaults.standard.set(true, forKey: "LOGGEDIN")
     }
     
 }
