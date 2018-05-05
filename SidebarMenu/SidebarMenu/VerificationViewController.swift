@@ -30,8 +30,18 @@ class VerificationViewController: UIViewController {
     }
     
     @IBAction func btnVerifyPressed(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
-        UserDefaults.standard.set(true, forKey: "LOGGEDIN")
+        if(self.txtVerificationCode.text == "0000"){
+            self.dismiss(animated: true, completion: nil)
+            UserDefaults.standard.set(true, forKey: "LOGGEDIN")
+        }else{
+            let alertController = UIAlertController(title: "Verification", message: "Please type 0000", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+                UIAlertAction in
+                NSLog("OK Pressed")
+            }
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     @IBAction func btnCancelPressed(_ sender: UIButton) {
         for controller in self.navigationController!.viewControllers as Array {

@@ -15,6 +15,7 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.separatorColor = UIColor.clear
         //var check : Bool = UserDefaults.standard.bool(forKey: "LOGGED_IN")
         //if UserDefaults.standard.bool(forKey: "LOGGED_IN") == false ||  UserDefaults.standard.bool(forKey: "LOGGED_IN") == nil{
 //            let storyboard = UIStoryboard(name: "Main", bundle: nil)

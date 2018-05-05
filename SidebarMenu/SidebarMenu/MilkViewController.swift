@@ -20,13 +20,25 @@ class MilkViewController: UIViewController {
 
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
-        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MilkDetailViewController") as? MilkDetailViewController {
-            if let navigator = navigationController {
-                navigator.pushViewController(viewController, animated: true)
-            }
-        }
+//        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CartViewController") as? CartViewController {
+//            if let navigator = navigationController {
+//                navigator.present(viewController, animated: true)
+//            }
+//        }
+        let newView2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
         
-        // Your action
+        let navCtrl = UINavigationController(rootViewController: newView2)
+        navCtrl.navigationBar.barTintColor = UIColor.black
+        navCtrl.navigationBar.tintColor = UIColor.white
+        self.present(navCtrl, animated: true, completion: nil)
+//        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CartViewController") as? CartViewController
+//        let navViewController: UINavigationController = UINavigationController(rootViewController: viewController!)
+//        navViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(onBackButton(button:)))
+//        self.present(navViewController, animated: true, completion: nil)
+    }
+    
+    @objc private func onBackButton(button: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

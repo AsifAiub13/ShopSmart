@@ -49,8 +49,19 @@ class SignInViewController: UIViewController,UITextFieldDelegate {
     @IBAction func btnForgotPasswordPressed(_ sender: UIButton) {
     }
     @IBAction func btnLoginPressed(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
-        UserDefaults.standard.set(true, forKey: "LOGGEDIN")
+        if(self.txtEmail.text == "test@mail.com" && self.txtPassword.text == "0000"){
+            self.dismiss(animated: true, completion: nil)
+            UserDefaults.standard.set(true, forKey: "LOGGEDIN")
+        }else{
+            let alertController = UIAlertController(title: "Sign In", message: "Please type test@mail.com in email and 0000 in password", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+                UIAlertAction in
+                NSLog("OK Pressed")
+            }
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
     }
     
 }

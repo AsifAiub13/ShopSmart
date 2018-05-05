@@ -1,5 +1,5 @@
 //
-//  MilkDetailViewController.swift
+//  PaymentDetailsViewController.swift
 //  SidebarMenu
 //
 //  Created by Asif Seraje on 5/4/18.
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class MilkDetailViewController: UIViewController {
-    @IBOutlet weak var pickerNumber: UIPickerView!
-    
-    @IBOutlet weak var btnAddToCart: UIButton!
+class PaymentDetailsViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
@@ -22,8 +21,12 @@ class MilkDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func btnAddToCartPressed(_ sender: UIButton) {
-        
+    @IBAction func btnContinuePressed(_ sender: UIButton) {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FinalPaymentTableViewController") as? FinalPaymentTableViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
     }
     
     /*
