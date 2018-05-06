@@ -12,7 +12,7 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate,U
     
     @IBOutlet var menuButton:UIBarButtonItem!
     @IBOutlet var extraButton:UIBarButtonItem!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorColor = UIColor.clear
@@ -52,7 +52,19 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate,U
             
         
         }
+        let editImage    = UIImage(named: "cart")!
+        let editButton   = UIBarButtonItem(image: editImage,  style: .plain, target: self, action: #selector(self.didTapEditButton))
+        let searchButton = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(self.didTapSearchButton))
+        navigationItem.rightBarButtonItems = [searchButton,editButton]
         
+    }
+    
+    @objc func didTapEditButton(sender: AnyObject){
+        
+    }
+    
+    @objc func didTapSearchButton(sender: AnyObject){
+
     }
     @objc func dismissKeyboard(){
         view.endEditing(true)
@@ -70,6 +82,7 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate,U
         let homeAction = UIAlertAction(title: "Home", style: UIAlertActionStyle.default) {
             UIAlertAction in
             NSLog("OK Pressed")
+            
         }
         let lockerAction = UIAlertAction(title: "Locker", style: UIAlertActionStyle.default) {
             UIAlertAction in

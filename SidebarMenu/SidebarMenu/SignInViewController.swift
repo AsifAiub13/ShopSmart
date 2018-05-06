@@ -47,6 +47,20 @@ class SignInViewController: UIViewController,UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func btnForgotPasswordPressed(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Forgot Password", message: "Please enter your phone number to send new password", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addTextField { (textField : UITextField!) -> Void in
+            textField.placeholder = "Phone Number"
+        }
+        let saveAction = UIAlertAction(title: "Send", style: UIAlertActionStyle.default, handler: { alert -> Void in
+            let firstTextField = alertController.textFields![0] as UITextField
+        })
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: {
+            (action : UIAlertAction!) -> Void in })
+        
+        alertController.addAction(saveAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
     }
     @IBAction func btnLoginPressed(_ sender: UIButton) {
         if(self.txtEmail.text == "test@mail.com" && self.txtPassword.text == "0000"){

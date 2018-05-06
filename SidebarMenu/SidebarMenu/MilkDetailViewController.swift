@@ -16,6 +16,18 @@ class MilkDetailViewController: UIViewController,UIPickerViewDataSource,UIPicker
         pickerNumber.dataSource = self
         pickerNumber.delegate = self
         // Do any additional setup after loading the view.
+        let editImage    = UIImage(named: "cart")!
+        let editButton   = UIBarButtonItem(image: editImage,  style: .plain, target: self, action: #selector(self.didTapEditButton))
+        let searchButton = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(self.didTapSearchButton))
+        navigationItem.rightBarButtonItems = [searchButton,editButton]
+    }
+    
+    @objc func didTapEditButton(sender: AnyObject){
+        
+    }
+    
+    @objc func didTapSearchButton(sender: AnyObject){
+        
     }
     let pickerComponents = ["1", "2", "3", "4"]
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

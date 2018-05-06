@@ -14,6 +14,18 @@ class DairyAndEggsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.btnMilk.titleLabel?.text = "Milk"
+        let editImage    = UIImage(named: "cart")!
+        let editButton   = UIBarButtonItem(image: editImage,  style: .plain, target: self, action: #selector(self.didTapEditButton))
+        let searchButton = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(self.didTapSearchButton))
+        navigationItem.rightBarButtonItems = [searchButton,editButton]
+    }
+    
+    @objc func didTapEditButton(sender: AnyObject){
+        
+    }
+    
+    @objc func didTapSearchButton(sender: AnyObject){
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -71,7 +71,7 @@
         <!--Home-->
         <scene sceneID="3qE-8D-r7Z">
             <objects>
-                <tableViewController id="RaP-X2-i0v" customClass="NewsTableViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="NewsTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RaP-X2-i0v" customClass="NewsTableViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="583" sectionHeaderHeight="22" sectionFooterHeight="22" id="Idv-M6-Zjl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -365,6 +365,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="btnDairy" destination="GCi-JK-xtU" id="NGt-4e-Vn3"/>
+                                    <outlet property="serachMe" destination="hTO-Eb-fT9" id="0Sn-v2-IXI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2161,7 +2162,7 @@
             </objects>
             <point key="canvasLocation" x="225" y="953"/>
         </scene>
-        <!--<logo will appear here>-->
+        <!--Login View Controller-->
         <scene sceneID="xrf-GY-dl3">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oI3-Nj-j6d" customClass="LoginViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
@@ -2249,7 +2250,7 @@
                             <constraint firstItem="cy7-xu-hej" firstAttribute="top" secondItem="05t-Xq-Y5n" secondAttribute="bottom" constant="19" id="xSi-lX-WFa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="&lt;logo will appear here&gt;" id="akS-1q-ZPd">
+                    <navigationItem key="navigationItem" id="akS-1q-ZPd">
                         <barButtonItem key="backBarButtonItem" title=" " id="Ul0-an-VOv"/>
                     </navigationItem>
                     <connections>
@@ -2263,7 +2264,7 @@
             </objects>
             <point key="canvasLocation" x="388" y="2062.2188905547227"/>
         </scene>
-        <!--<logo will appear here>-->
+        <!--Sign In View Controller-->
         <scene sceneID="qtL-ZC-6Ng">
             <objects>
                 <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yhd-oZ-I8o" customClass="SignInViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
@@ -2361,7 +2362,7 @@
                             <constraint firstItem="Ht4-V3-V6b" firstAttribute="trailing" secondItem="bf8-hX-Avl" secondAttribute="trailing" id="z7q-OG-oQk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="&lt;logo will appear here&gt;" id="ghJ-O7-6cM">
+                    <navigationItem key="navigationItem" id="ghJ-O7-6cM">
                         <barButtonItem key="backBarButtonItem" title=" " id="SmT-za-M1z"/>
                     </navigationItem>
                     <connections>
@@ -2439,7 +2440,7 @@
             </objects>
             <point key="canvasLocation" x="3660" y="2927.5862068965521"/>
         </scene>
-        <!--<logo will appear here>-->
+        <!--Sign Up View Controller-->
         <scene sceneID="vFY-WD-cJH">
             <objects>
                 <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="buu-Zv-vXg" customClass="SignUpViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
@@ -2570,7 +2571,7 @@
                             <constraint firstAttribute="bottom" secondItem="jSG-bx-My1" secondAttribute="bottom" constant="20" symbolic="YES" id="wRE-ol-n65"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="&lt;logo will appear here&gt;" id="7RM-Uu-chD">
+                    <navigationItem key="navigationItem" id="7RM-Uu-chD">
                         <barButtonItem key="backBarButtonItem" title=" " id="2Ef-rw-G7j"/>
                     </navigationItem>
                     <connections>
@@ -2586,7 +2587,7 @@
             </objects>
             <point key="canvasLocation" x="1940" y="1679.9100449775115"/>
         </scene>
-        <!--<logo will appear here>-->
+        <!--Verification View Controller-->
         <scene sceneID="GK0-LH-qGT">
             <objects>
                 <viewController storyboardIdentifier="VerificationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0sp-nV-tAW" customClass="VerificationViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
@@ -2691,7 +2692,7 @@
                             <constraint firstItem="Upk-x1-lC5" firstAttribute="leading" secondItem="zDu-Xd-qEW" secondAttribute="leadingMargin" constant="24" id="zRk-GX-0ue"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="&lt;logo will appear here&gt;" id="J9Y-D7-uDn">
+                    <navigationItem key="navigationItem" id="J9Y-D7-uDn">
                         <barButtonItem key="backBarButtonItem" title=" " id="cpw-x9-Wf3"/>
                     </navigationItem>
                     <connections>
@@ -2713,7 +2714,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fff-EU-qMS">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -2735,7 +2736,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VSc-Qn-oHc">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -2757,7 +2758,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PUc-X7-7M7">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -2779,7 +2780,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TIv-z5-yGJ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>

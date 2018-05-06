@@ -16,6 +16,18 @@ class MilkViewController: UIViewController {
         imgView1.isUserInteractionEnabled = true
         imgView1.addGestureRecognizer(tapGestureRecognizer)
         // Do any additional setup after loading the view.
+        let editImage    = UIImage(named: "cart")!
+        let editButton   = UIBarButtonItem(image: editImage,  style: .plain, target: self, action: #selector(self.didTapEditButton))
+        let searchButton = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(self.didTapSearchButton))
+        navigationItem.rightBarButtonItems = [searchButton,editButton]
+    }
+    
+    @objc func didTapEditButton(sender: AnyObject){
+        
+    }
+    
+    @objc func didTapSearchButton(sender: AnyObject){
+        
     }
 
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer){

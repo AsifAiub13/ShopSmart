@@ -14,6 +14,18 @@ class SnacksViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let editImage    = UIImage(named: "cart")!
+        let editButton   = UIBarButtonItem(image: editImage,  style: .plain, target: self, action: #selector(self.didTapEditButton))
+        let searchButton = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(self.didTapSearchButton))
+        navigationItem.rightBarButtonItems = [searchButton,editButton]
+    }
+    
+    @objc func didTapEditButton(sender: AnyObject){
+        
+    }
+    
+    @objc func didTapSearchButton(sender: AnyObject){
+        
     }
 
     override func didReceiveMemoryWarning() {
