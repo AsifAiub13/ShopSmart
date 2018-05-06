@@ -44,10 +44,10 @@ class FinalPaymentTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "orderCell", for: indexPath)
         if indexPath.row == 0  {
-            cell.imageView?.image = #imageLiteral(resourceName: "CompanyLogo")
+            cell.imageView?.image = #imageLiteral(resourceName: "DairyEggs")
             cell.textLabel?.text = "Item 1"
         }else{
-            cell.imageView?.image = #imageLiteral(resourceName: "CompanyLogo")
+            cell.imageView?.image = #imageLiteral(resourceName: "DairyEggs")
             cell.textLabel?.text = "Item 2"
         }
         return cell
@@ -72,7 +72,26 @@ class FinalPaymentTableViewController: UITableViewController {
     }
     
     @objc func paymentPressed() {
-        self.dismiss(animated: true, completion: nil)
+        var alert = UIAlertController(title: "Thank you for your order!", message: "Your items will be handpicked and you will be notified when they're on their way to you.", preferredStyle: .actionSheet)
+        var yesButton = UIAlertAction(title: "OK", style: .cancel, handler: {(_ action: UIAlertAction?) -> Void in
+            self.dismiss(animated: true, completion: nil)
+        })
+        var viewController = UIViewController()
+        viewController.view.backgroundColor = UIColor.clear
+        var imgMyImage = UIImage(named: "DairyEggs")
+        var ivMyImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: imgMyImage?.size.width ?? 0.0, height: (imgMyImage?.size.height ?? 0.0) - 100))
+        ivMyImageView.image = imgMyImage
+        ivMyImageView.contentMode = .center
+        ivMyImageView.clipsToBounds = true
+        viewController.view.addSubview(ivMyImageView)
+        alert.setValue(viewController, forKey: "contentViewController")
+        var height = NSLayoutConstraint(item: alert.view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: view.frame.size.height * 0.9)
+        var width = NSLayoutConstraint(item: alert.view, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1, constant: view.frame.size.width * 2)
+        alert.view.addConstraint(width)
+        alert.view.addConstraint(height)
+        alert.addAction(yesButton)
+        present(alert, animated: true) {() -> Void in }
+        
     }
     /*
     // Override to support conditional editing of the table view.
