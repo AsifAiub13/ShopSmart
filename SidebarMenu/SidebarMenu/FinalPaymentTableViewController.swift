@@ -72,21 +72,21 @@ class FinalPaymentTableViewController: UITableViewController {
     }
     
     @objc func paymentPressed() {
-        var alert = UIAlertController(title: "Thank you for your order!", message: "Your items will be handpicked and you will be notified when they're on their way to you.", preferredStyle: .actionSheet)
-        var yesButton = UIAlertAction(title: "OK", style: .cancel, handler: {(_ action: UIAlertAction?) -> Void in
+        let alert = UIAlertController(title: "Thank you for your order!", message: "Your items will be handpicked and you will be notified when they're on their way to you.", preferredStyle: .actionSheet)
+        let yesButton = UIAlertAction(title: "OK", style: .cancel, handler: {(_ action: UIAlertAction?) -> Void in
             self.dismiss(animated: true, completion: nil)
         })
-        var viewController = UIViewController()
+        let viewController = UIViewController()
         viewController.view.backgroundColor = UIColor.clear
-        var imgMyImage = UIImage(named: "DairyEggs")
-        var ivMyImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: imgMyImage?.size.width ?? 0.0, height: (imgMyImage?.size.height ?? 0.0) - 100))
+        let imgMyImage = UIImage(named: "DairyEggs")
+        let ivMyImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: imgMyImage?.size.width ?? 0.0, height: (imgMyImage?.size.height ?? 0.0) - 100))
         ivMyImageView.image = imgMyImage
         ivMyImageView.contentMode = .center
         ivMyImageView.clipsToBounds = true
         viewController.view.addSubview(ivMyImageView)
         alert.setValue(viewController, forKey: "contentViewController")
-        var height = NSLayoutConstraint(item: alert.view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: view.frame.size.height * 0.9)
-        var width = NSLayoutConstraint(item: alert.view, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1, constant: view.frame.size.width * 2)
+        let height = NSLayoutConstraint(item: alert.view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: view.frame.size.height * 0.9)
+        let width = NSLayoutConstraint(item: alert.view, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1, constant: view.frame.size.width * 2)
         alert.view.addConstraint(width)
         alert.view.addConstraint(height)
         alert.addAction(yesButton)
