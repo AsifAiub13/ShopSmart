@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate {
+class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate,UITextFieldDelegate {
     
     @IBOutlet var menuButton:UIBarButtonItem!
     @IBOutlet var extraButton:UIBarButtonItem!
@@ -16,6 +16,10 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorColor = UIColor.clear
+        /*button.backgroundColor = .clear
+        button.layer.cornerRadius = 5
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.black.cgColor*/
         //var check : Bool = UserDefaults.standard.bool(forKey: "LOGGED_IN")
         //if UserDefaults.standard.bool(forKey: "LOGGED_IN") == false ||  UserDefaults.standard.bool(forKey: "LOGGED_IN") == nil{
 //            let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -33,9 +37,9 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate {
             
             let navCtrl = UINavigationController(rootViewController: newView2)
             self.present(navCtrl, animated: true, completion: nil)
+            let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+            view.addGestureRecognizer(tap)
         }
-        
-        
         if revealViewController() != nil {
             menuButton.target = revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
@@ -50,7 +54,32 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate {
         }
         
     }
-
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        if UserDefaults.standard.bool(forKey: "Popupshowed") != true{
+            self.showAlertForHomeLocker()
+        }
+        
+    }
+    func showAlertForHomeLocker() {
+        let alertController = UIAlertController(title: "", message: "Where would you like your items delivered to?", preferredStyle: .alert)
+        let homeAction = UIAlertAction(title: "Home", style: UIAlertActionStyle.default) {
+            UIAlertAction in
+            NSLog("OK Pressed")
+        }
+        let lockerAction = UIAlertAction(title: "Locker", style: UIAlertActionStyle.default) {
+            UIAlertAction in
+            NSLog("OK Pressed")
+        }
+        alertController.addAction(homeAction)
+        alertController.addAction(lockerAction)
+        self.present(alertController, animated: true, completion: nil)
+        UserDefaults.standard.set(true, forKey: "Popupshowed")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
