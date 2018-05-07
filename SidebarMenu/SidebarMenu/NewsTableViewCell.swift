@@ -37,7 +37,7 @@ class NewsTableViewCell: UITableViewCell {
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        print("searchText \(searchBar.text)")
+        self.serachMe.endEditing(true)
     }
     
 
