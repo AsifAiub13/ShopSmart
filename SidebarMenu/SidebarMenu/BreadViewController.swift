@@ -28,7 +28,10 @@ class BreadViewController: UIViewController {
         navCtrl.navigationBar.tintColor = UIColor.white
         self.present(navCtrl, animated: true, completion: nil)
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.badgeShow()
+    }
     @objc func didTapSearchButton(sender: AnyObject){
         
     }
@@ -46,7 +49,7 @@ class BreadViewController: UIViewController {
         badgeLbl.textAlignment = .center
         badgeLbl.layer.cornerRadius = 9.0
         badgeLbl.layer.masksToBounds = true
-        badgeLbl.text = String(self.badgeValueUpdate)
+        badgeLbl.text = String(UserDefaults.standard.integer(forKey: "badgeValue"))
         let notificationBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 35, height: 35))
         notificationBtn.setBackgroundImage(UIImage(named: "cart"), for: .normal)
         notificationBtn.setTitle("", for: .normal)

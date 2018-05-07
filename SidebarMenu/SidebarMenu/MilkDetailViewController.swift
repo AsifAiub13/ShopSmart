@@ -55,11 +55,15 @@ class MilkDetailViewController: UIViewController,UIPickerViewDataSource,UIPicker
     }
     
     @IBAction func btnAddToCartPressed(_ sender: UIButton) {
-        badgeValueUpdate = badgeValueUpdate + 1
-        UserDefaults.standard.set(badgeValueUpdate, forKey: "badgeValue")
+        self.badgeValueUpdate = self.badgeValueUpdate + 1
+        UserDefaults.standard.set(self.badgeValueUpdate, forKey: "badgeValue")
+        UserDefaults.standard.synchronize()
         self.badgeShow()
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+         self.badgeShow()
+    }
     func badgeShow() {
         let badgeLbl = UILabel(frame: CGRect(x: 16, y: -2, width: 18, height: 18))
         badgeLbl.backgroundColor = UIColor.red
@@ -67,7 +71,7 @@ class MilkDetailViewController: UIViewController,UIPickerViewDataSource,UIPicker
         badgeLbl.textAlignment = .center
         badgeLbl.layer.cornerRadius = 9.0
         badgeLbl.layer.masksToBounds = true
-        badgeLbl.text = String(badgeValueUpdate)
+        badgeLbl.text = String(UserDefaults.standard.integer(forKey: "badgeValue"))
         let notificationBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 35, height: 35))
         notificationBtn.setBackgroundImage(UIImage(named: "cart"), for: .normal)
         notificationBtn.setTitle("", for: .normal)

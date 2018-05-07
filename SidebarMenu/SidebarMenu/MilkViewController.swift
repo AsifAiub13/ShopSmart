@@ -30,7 +30,10 @@ class MilkViewController: UIViewController {
         self.present(navCtrl, animated: true, completion: nil)
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.badgeShow()
+    }
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer){
         if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MilkDetailViewController") as? MilkDetailViewController {
             if let navigator = navigationController {
@@ -48,7 +51,7 @@ class MilkViewController: UIViewController {
     }
     @IBOutlet weak var imgView1: UIImageView!
     
-    /*var badgeValueUpdate = 0
+    var badgeValueUpdate = 0
     func badgeShow() {
         let badgeLbl = UILabel(frame: CGRect(x: 16, y: -2, width: 18, height: 18))
         badgeLbl.backgroundColor = UIColor.red
@@ -56,7 +59,7 @@ class MilkViewController: UIViewController {
         badgeLbl.textAlignment = .center
         badgeLbl.layer.cornerRadius = 9.0
         badgeLbl.layer.masksToBounds = true
-        badgeLbl.text = String(self.badgeValueUpdate)
+        badgeLbl.text = String(UserDefaults.standard.integer(forKey: "badgeValue"))
         let notificationBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 35, height: 35))
         notificationBtn.setBackgroundImage(UIImage(named: "cart"), for: .normal)
         notificationBtn.setTitle("", for: .normal)
@@ -72,7 +75,7 @@ class MilkViewController: UIViewController {
         navCtrl.navigationBar.barTintColor = UIColor.black
         navCtrl.navigationBar.tintColor = UIColor.white
         self.present(navCtrl, animated: true, completion: nil)
-    }*/
+    }
     /*
     // MARK: - Navigation
 

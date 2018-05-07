@@ -76,6 +76,7 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate,U
         if UserDefaults.standard.bool(forKey: "Popupshowed") != true{
             self.showAlertForHomeLocker()
         }
+        self.badgeShow()
         
     }
     func showAlertForHomeLocker() {
@@ -294,7 +295,7 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate,U
             return
         }*/
     }
-    var badgeValueUpdate = 0
+    
     func badgeShow() {
         let badgeLbl = UILabel(frame: CGRect(x: 16, y: -2, width: 18, height: 18))
         badgeLbl.backgroundColor = UIColor.red
@@ -302,7 +303,7 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate,U
         badgeLbl.textAlignment = .center
         badgeLbl.layer.cornerRadius = 9.0
         badgeLbl.layer.masksToBounds = true
-        badgeLbl.text = String(self.badgeValueUpdate)
+        badgeLbl.text = String(UserDefaults.standard.integer(forKey: "badgeValue"))
         let notificationBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 35, height: 35))
         notificationBtn.setBackgroundImage(UIImage(named: "cart"), for: .normal)
         notificationBtn.setTitle("", for: .normal)
