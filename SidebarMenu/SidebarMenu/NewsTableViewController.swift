@@ -59,7 +59,12 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate,U
     }
     
     @objc func didTapEditButton(sender: AnyObject){
+        let newView2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
         
+        let navCtrl = UINavigationController(rootViewController: newView2)
+        navCtrl.navigationBar.barTintColor = UIColor.black
+        navCtrl.navigationBar.tintColor = UIColor.white
+        self.present(navCtrl, animated: true, completion: nil)
     }
     
     @objc func dismissKeyboard(){
