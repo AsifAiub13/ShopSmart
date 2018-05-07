@@ -431,6 +431,9 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="VwI-tb-ZRn" kind="push" id="0gH-oj-4NC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f01-Yd-ByO">
                                 <rect key="frame" x="194" y="392" width="165" height="165"/>
@@ -444,6 +447,9 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="VwI-tb-ZRn" kind="push" id="5ug-pQ-g6d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aq8-v8-jtQ">
                                 <rect key="frame" x="16" y="392" width="165" height="165"/>
@@ -457,6 +463,9 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="VwI-tb-ZRn" kind="push" id="rRR-eH-4Ed"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dairy &amp; Eggs " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwf-hh-XmY">
                                 <rect key="frame" x="16" y="95" width="343" height="34"/>
@@ -3612,4 +3621,7 @@
         <image name="tag" width="1024" height="1024"/>
         <image name="twitter" width="150" height="150"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5ug-pQ-g6d"/>
+    </inferredMetricsTieBreakers>
 </document>
