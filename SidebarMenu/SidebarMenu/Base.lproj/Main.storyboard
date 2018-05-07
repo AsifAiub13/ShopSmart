@@ -813,6 +813,9 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="VwI-tb-ZRn" kind="push" id="KWA-3o-Tke"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e1-ZS-kHt">
                                 <rect key="frame" x="194" y="155" width="165" height="165"/>
@@ -826,6 +829,9 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="VwI-tb-ZRn" kind="push" id="0xH-nA-sOj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOH-9q-bUN">
                                 <rect key="frame" x="16" y="374" width="165" height="165"/>
@@ -839,6 +845,9 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="VwI-tb-ZRn" kind="push" id="Bf1-SP-Upb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYw-Im-q70">
                                 <rect key="frame" x="194" y="374" width="165" height="165"/>
@@ -852,6 +861,9 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="VwI-tb-ZRn" kind="push" id="AP1-Xf-5PV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZG-y3-nt0">
                                 <rect key="frame" x="16" y="98" width="343" height="34"/>
@@ -3622,6 +3634,6 @@
         <image name="twitter" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5ug-pQ-g6d"/>
+        <segue reference="0xH-nA-sOj"/>
     </inferredMetricsTieBreakers>
 </document>
