@@ -422,7 +422,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMb-Ki-QOo">
                                 <rect key="frame" x="194" y="153" width="160" height="165"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="DairyEggs" backgroundImage="DairyEggs">
+                                <state key="normal" image="yogurt">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -438,7 +438,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f01-Yd-ByO">
                                 <rect key="frame" x="194" y="392" width="165" height="165"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="DairyEggs" backgroundImage="DairyEggs">
+                                <state key="normal" image="cheese">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -454,7 +454,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aq8-v8-jtQ">
                                 <rect key="frame" x="16" y="392" width="165" height="165"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="DairyEggs" backgroundImage="DairyEggs">
+                                <state key="normal" image="eggs">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -579,7 +579,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="hDx-ev-JnE"/>
                                 </constraints>
-                                <state key="normal" image="Bread">
+                                <state key="normal" image="whitebread">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -592,7 +592,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb8-3o-7nt">
                                 <rect key="frame" x="186" y="146" width="165" height="165"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="Bread">
+                                <state key="normal" image="wholegrain">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -675,7 +675,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcJ-Xk-6dv">
                                 <rect key="frame" x="193" y="157" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="FrozenFood">
+                                <state key="normal" image="vegs">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -689,9 +689,9 @@
                                 <rect key="frame" x="15" y="157" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="165" id="JSk-F2-pSo"/>
+                                    <constraint firstAttribute="width" constant="165" id="tTe-KW-w1H"/>
                                 </constraints>
-                                <state key="normal" image="FrozenFood">
+                                <state key="normal" image="meat2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -704,7 +704,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frozen Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lha-qX-qdq">
                                 <rect key="frame" x="17" y="92" width="343" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="832-0r-YVQ"/>
+                                    <constraint firstAttribute="height" constant="34" id="DkY-QB-8kd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -728,7 +728,7 @@
                                 <rect key="frame" x="15" y="536" width="165" height="22"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.41568627450000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="CSA-fr-eZo"/>
+                                    <constraint firstAttribute="height" constant="22" id="hJe-Za-uLt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -738,9 +738,9 @@
                                 <rect key="frame" x="16" y="371" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="165" id="12c-c2-t8O"/>
+                                    <constraint firstAttribute="width" constant="165" id="U3V-kJ-Lie"/>
                                 </constraints>
-                                <state key="normal" image="FrozenFood">
+                                <state key="normal" image="readymeal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -753,30 +753,30 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lha-qX-qdq" firstAttribute="top" secondItem="hAh-ql-vP6" secondAttribute="bottom" constant="28" id="0Qp-8e-f4c"/>
-                            <constraint firstItem="vdX-4U-fBY" firstAttribute="leading" secondItem="pJp-nt-JpF" secondAttribute="leading" id="0qL-Nk-slP"/>
-                            <constraint firstItem="ogo-mE-UeH" firstAttribute="leading" secondItem="TZf-08-pqY" secondAttribute="leadingMargin" id="2BH-JS-Qdv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lha-qX-qdq" secondAttribute="trailing" constant="-1" id="4g0-GE-bJa"/>
-                            <constraint firstItem="vdX-4U-fBY" firstAttribute="leading" secondItem="TZf-08-pqY" secondAttribute="leadingMargin" constant="-1" id="8iJ-3a-pU6"/>
-                            <constraint firstItem="t8w-vw-uv2" firstAttribute="top" secondItem="ogo-mE-UeH" secondAttribute="bottom" id="Bbd-6y-ej3"/>
-                            <constraint firstItem="vdX-4U-fBY" firstAttribute="trailing" secondItem="pJp-nt-JpF" secondAttribute="trailing" id="E0k-0f-cbr"/>
-                            <constraint firstItem="ogo-mE-UeH" firstAttribute="top" secondItem="pJp-nt-JpF" secondAttribute="bottom" constant="27" id="Gwc-lx-Tjl"/>
-                            <constraint firstItem="qcJ-Xk-6dv" firstAttribute="leading" secondItem="jqh-Me-roH" secondAttribute="leading" id="HzE-P1-jAO"/>
-                            <constraint firstItem="pJp-nt-JpF" firstAttribute="centerY" secondItem="TZf-08-pqY" secondAttribute="centerY" id="KQh-Rw-ktM"/>
-                            <constraint firstItem="qcJ-Xk-6dv" firstAttribute="trailing" secondItem="jqh-Me-roH" secondAttribute="trailing" id="Ot5-iH-KpM"/>
-                            <constraint firstItem="pJp-nt-JpF" firstAttribute="leading" secondItem="t8w-vw-uv2" secondAttribute="leading" id="PqY-bR-8mR"/>
-                            <constraint firstItem="pJp-nt-JpF" firstAttribute="baseline" secondItem="jqh-Me-roH" secondAttribute="baseline" id="Tia-cq-aLi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qcJ-Xk-6dv" secondAttribute="trailing" constant="1" id="TxI-HP-2ZC"/>
-                            <constraint firstItem="lha-qX-qdq" firstAttribute="leading" secondItem="TZf-08-pqY" secondAttribute="leadingMargin" constant="1" id="azI-88-GYd"/>
-                            <constraint firstItem="vdX-4U-fBY" firstAttribute="top" secondItem="qcJ-Xk-6dv" secondAttribute="top" id="bEw-oO-dwN"/>
-                            <constraint firstItem="vdX-4U-fBY" firstAttribute="top" secondItem="lha-qX-qdq" secondAttribute="bottom" constant="31" id="dDN-Oh-1eo"/>
-                            <constraint firstItem="qcJ-Xk-6dv" firstAttribute="leading" secondItem="vdX-4U-fBY" secondAttribute="trailing" constant="13" id="gTH-O0-Pi0"/>
-                            <constraint firstItem="pJp-nt-JpF" firstAttribute="firstBaseline" secondItem="jqh-Me-roH" secondAttribute="firstBaseline" id="tAt-eI-yPK"/>
-                            <constraint firstItem="DdD-JS-IrL" firstAttribute="top" secondItem="t8w-vw-uv2" secondAttribute="bottom" constant="109" id="tLY-Co-WtB"/>
-                            <constraint firstItem="vdX-4U-fBY" firstAttribute="baseline" secondItem="qcJ-Xk-6dv" secondAttribute="baseline" id="vFI-4Z-QUO"/>
-                            <constraint firstItem="DdD-JS-IrL" firstAttribute="top" secondItem="jqh-Me-roH" secondAttribute="bottom" constant="323" id="vsG-Yl-Qg3"/>
-                            <constraint firstItem="pJp-nt-JpF" firstAttribute="trailing" secondItem="t8w-vw-uv2" secondAttribute="trailing" id="y4N-bh-elz"/>
-                            <constraint firstItem="pJp-nt-JpF" firstAttribute="top" secondItem="vdX-4U-fBY" secondAttribute="bottom" id="zhE-X6-0rj"/>
+                            <constraint firstItem="qcJ-Xk-6dv" firstAttribute="leading" secondItem="vdX-4U-fBY" secondAttribute="trailing" constant="13" id="18S-uc-dvc"/>
+                            <constraint firstItem="t8w-vw-uv2" firstAttribute="top" secondItem="ogo-mE-UeH" secondAttribute="bottom" id="3LX-Gb-27G"/>
+                            <constraint firstItem="DdD-JS-IrL" firstAttribute="top" secondItem="jqh-Me-roH" secondAttribute="bottom" constant="323" id="4zs-J5-v6b"/>
+                            <constraint firstItem="vdX-4U-fBY" firstAttribute="leading" secondItem="TZf-08-pqY" secondAttribute="leadingMargin" constant="-1" id="9F1-oB-qv1"/>
+                            <constraint firstItem="pJp-nt-JpF" firstAttribute="leading" secondItem="t8w-vw-uv2" secondAttribute="leading" id="AEj-R0-mqC"/>
+                            <constraint firstItem="lha-qX-qdq" firstAttribute="leading" secondItem="TZf-08-pqY" secondAttribute="leadingMargin" constant="1" id="Au9-fO-bOi"/>
+                            <constraint firstItem="pJp-nt-JpF" firstAttribute="firstBaseline" secondItem="jqh-Me-roH" secondAttribute="firstBaseline" id="F5Y-hH-u29"/>
+                            <constraint firstItem="vdX-4U-fBY" firstAttribute="bottom" secondItem="qcJ-Xk-6dv" secondAttribute="bottom" id="Hah-Ze-s1j"/>
+                            <constraint firstItem="vdX-4U-fBY" firstAttribute="top" secondItem="qcJ-Xk-6dv" secondAttribute="top" id="Qeb-Z7-TRO"/>
+                            <constraint firstItem="pJp-nt-JpF" firstAttribute="centerY" secondItem="TZf-08-pqY" secondAttribute="centerY" id="cZO-CK-fkO"/>
+                            <constraint firstItem="qcJ-Xk-6dv" firstAttribute="leading" secondItem="jqh-Me-roH" secondAttribute="leading" id="gEG-PK-h4M"/>
+                            <constraint firstItem="pJp-nt-JpF" firstAttribute="baseline" secondItem="jqh-Me-roH" secondAttribute="baseline" id="gcu-Pl-1Xh"/>
+                            <constraint firstItem="vdX-4U-fBY" firstAttribute="trailing" secondItem="pJp-nt-JpF" secondAttribute="trailing" id="iAT-qV-7Jq"/>
+                            <constraint firstItem="vdX-4U-fBY" firstAttribute="top" secondItem="lha-qX-qdq" secondAttribute="bottom" constant="31" id="klc-jj-h7S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lha-qX-qdq" secondAttribute="trailing" constant="-1" id="lhg-aS-IhA"/>
+                            <constraint firstItem="DdD-JS-IrL" firstAttribute="top" secondItem="t8w-vw-uv2" secondAttribute="bottom" constant="109" id="mS1-69-bkz"/>
+                            <constraint firstItem="ogo-mE-UeH" firstAttribute="leading" secondItem="TZf-08-pqY" secondAttribute="leadingMargin" id="nF9-MX-wpz"/>
+                            <constraint firstItem="qcJ-Xk-6dv" firstAttribute="trailing" secondItem="jqh-Me-roH" secondAttribute="trailing" id="nYj-l9-WMe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qcJ-Xk-6dv" secondAttribute="trailing" constant="1" id="oWS-o8-vsI"/>
+                            <constraint firstItem="vdX-4U-fBY" firstAttribute="leading" secondItem="pJp-nt-JpF" secondAttribute="leading" id="r0b-KU-imJ"/>
+                            <constraint firstItem="pJp-nt-JpF" firstAttribute="trailing" secondItem="t8w-vw-uv2" secondAttribute="trailing" id="s0d-Rx-ZRG"/>
+                            <constraint firstItem="pJp-nt-JpF" firstAttribute="top" secondItem="vdX-4U-fBY" secondAttribute="bottom" id="wvM-sh-END"/>
+                            <constraint firstItem="lha-qX-qdq" firstAttribute="top" secondItem="hAh-ql-vP6" secondAttribute="bottom" constant="28" id="xm4-dQ-bVk"/>
+                            <constraint firstItem="ogo-mE-UeH" firstAttribute="top" secondItem="pJp-nt-JpF" secondAttribute="bottom" constant="27" id="znq-wk-2XH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oNn-3K-8B7"/>
@@ -820,7 +820,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e1-ZS-kHt">
                                 <rect key="frame" x="194" y="155" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="Meat">
+                                <state key="normal" image="poultry">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -836,7 +836,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOH-9q-bUN">
                                 <rect key="frame" x="16" y="374" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="Meat">
+                                <state key="normal" image="fish">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -852,7 +852,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYw-Im-q70">
                                 <rect key="frame" x="194" y="374" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="Meat">
+                                <state key="normal" image="seagood">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -972,7 +972,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="7tJ-Af-OSE"/>
                                 </constraints>
-                                <state key="normal" image="DrinkBeverages">
+                                <state key="normal" image="juice">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -985,7 +985,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wf3-al-31d">
                                 <rect key="frame" x="194" y="155" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="DrinkBeverages">
+                                <state key="normal" image="soda">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -998,7 +998,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJQ-Wc-DSb">
                                 <rect key="frame" x="16" y="369" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="DrinkBeverages">
+                                <state key="normal" image="energydrinks">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1099,7 +1099,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="lBK-pm-FkJ"/>
                                 </constraints>
-                                <state key="normal" image="Snacks">
+                                <state key="normal" image="chips">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1112,7 +1112,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clb-qX-Nxu">
                                 <rect key="frame" x="194" y="155" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="Snacks">
+                                <state key="normal" image="biscuits">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1125,7 +1125,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoR-rS-UqC">
                                 <rect key="frame" x="16" y="365" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="Snacks">
+                                <state key="normal" image="chocolate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1227,7 +1227,7 @@
                                     <constraint firstAttribute="height" constant="165" id="gwL-O8-9Qi"/>
                                     <constraint firstAttribute="width" constant="165" id="yD5-Dg-gWM"/>
                                 </constraints>
-                                <state key="normal" image="FoodCupboard">
+                                <state key="normal" image="pasta">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1240,7 +1240,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B8-fS-QQ5">
                                 <rect key="frame" x="194" y="155" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="FoodCupboard">
+                                <state key="normal" image="cannedfood">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1253,7 +1253,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gee-TM-GN2">
                                 <rect key="frame" x="16" y="368" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="FoodCupboard">
+                                <state key="normal" image="sauces">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1266,7 +1266,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAd-FV-0Od">
                                 <rect key="frame" x="194" y="368" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="FoodCupboard">
+                                <state key="normal" image="jam">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -2088,7 +2088,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="ar0-Fh-YbZ"/>
                                 </constraints>
-                                <state key="normal" image="FruitsVegs">
+                                <state key="normal" image="vegetables">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -2101,7 +2101,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qai-6B-tcY">
                                 <rect key="frame" x="194" y="155" width="165" height="165"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="FruitsVegs">
+                                <state key="normal" image="fruits">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -2130,7 +2130,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pasta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpy-iA-EQO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpy-iA-EQO">
                                 <rect key="frame" x="194" y="316" width="165" height="22"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.41568627450000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -3623,15 +3623,38 @@
         <image name="FruitsVegs" width="512" height="512"/>
         <image name="Meat" width="512" height="512"/>
         <image name="Snacks" width="512" height="512"/>
+        <image name="biscuits" width="512" height="512"/>
         <image name="calendar" width="1024" height="1024"/>
+        <image name="cannedfood" width="512" height="512"/>
+        <image name="cheese" width="512" height="512"/>
+        <image name="chips" width="502" height="502"/>
+        <image name="chocolate" width="512" height="512"/>
         <image name="comments" width="1024" height="1024"/>
+        <image name="eggs" width="512" height="512"/>
+        <image name="energydrinks" width="512" height="512"/>
         <image name="fb" width="150" height="150"/>
+        <image name="fish" width="512" height="512"/>
+        <image name="fruits" width="57" height="57"/>
         <image name="insta" width="150" height="150"/>
+        <image name="jam" width="54" height="54"/>
         <image name="japanvillage" width="1800" height="1350"/>
+        <image name="juice" width="512" height="512"/>
+        <image name="meat2" width="50" height="50"/>
         <image name="menu" width="22" height="22"/>
         <image name="ogro_trans" width="150" height="104"/>
+        <image name="pasta" width="512" height="512"/>
+        <image name="poultry" width="512" height="512"/>
+        <image name="readymeal" width="510" height="510"/>
+        <image name="sauces" width="512" height="512"/>
+        <image name="seagood" width="512" height="512"/>
+        <image name="soda" width="512" height="512"/>
         <image name="tag" width="1024" height="1024"/>
         <image name="twitter" width="150" height="150"/>
+        <image name="vegetables" width="56" height="56"/>
+        <image name="vegs" width="512" height="512"/>
+        <image name="whitebread" width="512" height="512"/>
+        <image name="wholegrain" width="512" height="512"/>
+        <image name="yogurt" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="0xH-nA-sOj"/>
