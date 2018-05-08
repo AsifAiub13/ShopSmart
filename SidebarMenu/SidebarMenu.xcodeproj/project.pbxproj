@@ -7,14 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D311490209F929100B69A2F /* AnimatedULogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D311489209F928D00B69A2F /* AnimatedULogoView.swift */; };
-		8D311491209F929100B69A2F /* TileGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31148A209F928D00B69A2F /* TileGridView.swift */; };
-		8D311492209F929100B69A2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31148B209F928D00B69A2F /* Constants.swift */; };
-		8D311493209F929100B69A2F /* Chimes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D31148D209F928E00B69A2F /* Chimes.xcassets */; };
-		8D311494209F929100B69A2F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31148E209F928F00B69A2F /* SplashViewController.swift */; };
-		8D311495209F929100B69A2F /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31148F209F929000B69A2F /* TileView.swift */; };
-		8D311498209F929D00B69A2F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D311497209F929C00B69A2F /* Utils.swift */; };
-		8D31149A209F92D600B69A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D311499209F92D600B69A2F /* LaunchScreen.storyboard */; };
 		8D5562F8209B93180072091B /* MilkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5562F7209B93180072091B /* MilkViewController.swift */; };
 		8D5562FA209B9BC00072091B /* MilkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5562F9209B9BC00072091B /* MilkDetailViewController.swift */; };
 		8D56A3DA209C96B1000EE2B5 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D56A3D9209C96B1000EE2B5 /* CartViewController.swift */; };
@@ -59,16 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8D311489209F928D00B69A2F /* AnimatedULogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedULogoView.swift; sourceTree = "<group>"; };
-		8D31148A209F928D00B69A2F /* TileGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileGridView.swift; sourceTree = "<group>"; };
-		8D31148B209F928D00B69A2F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		8D31148C209F928E00B69A2F /* SplashScreenUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreenUI.h; sourceTree = "<group>"; };
-		8D31148D209F928E00B69A2F /* Chimes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chimes.xcassets; sourceTree = "<group>"; };
-		8D31148E209F928F00B69A2F /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		8D31148F209F929000B69A2F /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
-		8D311496209F929C00B69A2F /* Commons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commons.h; sourceTree = "<group>"; };
-		8D311497209F929C00B69A2F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		8D311499209F92D600B69A2F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D5562F7209B93180072091B /* MilkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkViewController.swift; sourceTree = "<group>"; };
 		8D5562F9209B9BC00072091B /* MilkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkDetailViewController.swift; sourceTree = "<group>"; };
 		8D56A3D9209C96B1000EE2B5 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
@@ -127,23 +109,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8D311488209F925900B69A2F /* SplashScreen */ = {
-			isa = PBXGroup;
-			children = (
-				8D311499209F92D600B69A2F /* LaunchScreen.storyboard */,
-				8D311496209F929C00B69A2F /* Commons.h */,
-				8D311497209F929C00B69A2F /* Utils.swift */,
-				8D311489209F928D00B69A2F /* AnimatedULogoView.swift */,
-				8D31148D209F928E00B69A2F /* Chimes.xcassets */,
-				8D31148B209F928D00B69A2F /* Constants.swift */,
-				8D31148C209F928E00B69A2F /* SplashScreenUI.h */,
-				8D31148E209F928F00B69A2F /* SplashViewController.swift */,
-				8D31148A209F928D00B69A2F /* TileGridView.swift */,
-				8D31148F209F929000B69A2F /* TileView.swift */,
-			);
-			name = SplashScreen;
-			sourceTree = "<group>";
-		};
 		8D5562F6209B92DB0072091B /* DairyAndEggsViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,7 +173,6 @@
 		F47029F21A7F27DB00E30A3C /* SidebarMenu */ = {
 			isa = PBXGroup;
 			children = (
-				8D311488209F925900B69A2F /* SplashScreen */,
 				8D56A3D8209C967B000EE2B5 /* PaymentsViewControllers */,
 				8D5562F6209B92DB0072091B /* DairyAndEggsViewControllers */,
 				8D886D9B2099BDD600EE6FE6 /* HomeScreenViewControllers */,
@@ -355,10 +319,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D311493209F929100B69A2F /* Chimes.xcassets in Resources */,
 				F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */,
 				F4702A001A7F27DC00E30A3C /* LaunchScreen.xib in Resources */,
-				8D31149A209F92D600B69A2F /* LaunchScreen.storyboard in Resources */,
 				F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,12 +344,9 @@
 				F4702A181A7F351C00E30A3C /* MenuController.swift in Sources */,
 				8D5562F8209B93180072091B /* MilkViewController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
-				8D311492209F929100B69A2F /* Constants.swift in Sources */,
 				8D886DA72099C5E400EE6FE6 /* MeatViewController.swift in Sources */,
 				8D886DA52099C5DB00EE6FE6 /* FrozenFoodViewController.swift in Sources */,
 				F491E74C1A7F4C630026528E /* NewsTableViewCell.swift in Sources */,
-				8D311494209F929100B69A2F /* SplashViewController.swift in Sources */,
-				8D311491209F929100B69A2F /* TileGridView.swift in Sources */,
 				8DE7CE3120978CEC00BCD8DC /* VerificationViewController.swift in Sources */,
 				8DE7CE2F20977FB900BCD8DC /* SignUpViewController.swift in Sources */,
 				8D56A3E2209C974D000EE2B5 /* FinalPaymentTableViewController.swift in Sources */,
@@ -399,10 +358,7 @@
 				8D886DA92099C60600EE6FE6 /* DrinkAndBeveragesViewController.swift in Sources */,
 				8D886D9F2099C59000EE6FE6 /* BreadViewController.swift in Sources */,
 				8D56A3DE209C96F8000EE2B5 /* PaymentDetailsViewController.swift in Sources */,
-				8D311490209F929100B69A2F /* AnimatedULogoView.swift in Sources */,
-				8D311498209F929D00B69A2F /* Utils.swift in Sources */,
 				8D886D9D2099BE2200EE6FE6 /* DairyAndEggsViewController.swift in Sources */,
-				8D311495209F929100B69A2F /* TileView.swift in Sources */,
 				F491E7531A7F7DF20026528E /* MapViewController.swift in Sources */,
 				8D886DAB2099C61100EE6FE6 /* SnacksViewController.swift in Sources */,
 				8D56A3DA209C96B1000EE2B5 /* CartViewController.swift in Sources */,

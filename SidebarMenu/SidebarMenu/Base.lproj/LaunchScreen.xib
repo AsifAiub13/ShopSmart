@@ -33,7 +33,7 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="ogro_trans" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYU-7W-QbX">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="new_ogro" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYU-7W-QbX">
                     <rect key="frame" x="78" y="91" width="324" height="190"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -71,6 +71,6 @@
         </view>
     </objects>
     <resources>
-        <image name="ogro_trans" width="150" height="104"/>
+        <image name="new_ogro" width="842" height="595"/>
     </resources>
 </document>
