@@ -17,7 +17,7 @@ protocol NewsTableViewCellDelegate: class {
     func btnDrinkPressed()
     func btnSnacksPressed()
 }
-class NewsTableViewCell: UITableViewCell {
+class NewsTableViewCell: UITableViewCell, UISearchBarDelegate{
     @IBOutlet weak var serachMe: UISearchBar!
     
     @IBOutlet weak var btnDairy: UIButton!
@@ -29,14 +29,14 @@ class NewsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        serachMe.delegate = self as? UISearchBarDelegate
+        serachMe.delegate = self
     }
     
-    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print("searchText \(searchText)")
     }
     
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.serachMe.endEditing(true)
     }
     

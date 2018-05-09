@@ -364,7 +364,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="btnDairy" destination="GCi-JK-xtU" id="NGt-4e-Vn3"/>
-                                    <outlet property="serachMe" destination="hTO-Eb-fT9" id="0Sn-v2-IXI"/>
+                                    <outlet property="serachMe" destination="hTO-Eb-fT9" id="uFk-W2-Hff"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

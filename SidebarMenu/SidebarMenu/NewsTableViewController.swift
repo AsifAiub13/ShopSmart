@@ -39,9 +39,10 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate,U
         let editImage    = UIImage(named: "cart")!
         let editButton   = UIBarButtonItem(image: editImage,  style: .plain, target: self, action: #selector(self.didTapEditButton))
         navigationItem.rightBarButtonItem = editButton
-        
-    }
     
+    }
+
+
     @objc func didTapEditButton(sender: AnyObject){
         let newView2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
         
