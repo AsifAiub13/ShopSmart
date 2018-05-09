@@ -16,10 +16,27 @@ protocol NewsTableViewCellDelegate: class {
     func btnMeatPressed()
     func btnDrinkPressed()
     func btnSnacksPressed()
+    func searchTextDidChanged(text:String)
+    func searchButtonClicked()
 }
 class NewsTableViewCell: UITableViewCell, UISearchBarDelegate{
     @IBOutlet weak var serachMe: UISearchBar!
+    @IBOutlet weak var lblbread: UILabel!
     
+    @IBOutlet weak var lblfoodcup: UILabel!
+    @IBOutlet weak var lblfrozen: UILabel!
+    @IBOutlet weak var lblmeat: UILabel!
+    @IBOutlet weak var lblfruits: UILabel!
+    @IBOutlet weak var lbldrinks: UILabel!
+    @IBOutlet weak var lbldairy: UILabel!
+    @IBOutlet weak var lblsnacks: UILabel!
+    @IBOutlet weak var btnSnacks: UIButton!
+    @IBOutlet weak var btnDrinks: UIButton!
+    @IBOutlet weak var btnMeat: UIButton!
+    @IBOutlet weak var btnFrozenFood: UIButton!
+    @IBOutlet weak var btnFoodCupboard: UIButton!
+    @IBOutlet weak var btnFruitsAndVegs: UIButton!
+    @IBOutlet weak var btnBread: UIButton!
     @IBOutlet weak var btnDairy: UIButton!
     @IBOutlet weak var postImageView:UIImageView!
     @IBOutlet weak var authorImageView:UIImageView!
@@ -34,10 +51,70 @@ class NewsTableViewCell: UITableViewCell, UISearchBarDelegate{
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print("searchText \(searchText)")
+        btnDairy.isHidden = true
+        lbldairy.isHidden = true
+        btnBread.isHidden = true
+        lblbread.isHidden = true
+        btnFruitsAndVegs.isHidden = true
+        lblfruits.isHidden = true
+        btnFoodCupboard.isHidden = true
+        lblfoodcup.isHidden = true
+        btnFrozenFood.isHidden = true
+        lblfrozen.isHidden = true
+        btnMeat.isHidden = true
+        lblmeat.isHidden = true
+        btnDrinks.isHidden = true
+        lbldrinks.isHidden = true
+        btnSnacks.isHidden = true
+        lblsnacks.isHidden = true
+        if searchText == "Milk" {
+            btnDairy.isHidden = false
+            lbldairy.isHidden = false
+        }else if searchText == "Bread"{
+            btnBread.isHidden = false
+            lblbread.isHidden = false
+        }else if searchText == "Fruits"{
+            btnFruitsAndVegs.isHidden = false
+            lblfruits.isHidden = false
+        }else if searchText == "Food cup"{
+            btnFoodCupboard.isHidden = false
+            lblfoodcup.isHidden = false
+        }else if searchText == "Frozen"{
+            btnFrozenFood.isHidden = false
+            lblfrozen.isHidden = false
+        }else if searchText == "Meat"{
+            btnMeat.isHidden = false
+            lblmeat.isHidden = false
+        }else if searchText == "Drinks"{
+            btnDrinks.isHidden = false
+            lbldrinks.isHidden = false
+        }else if searchText == "Snacks"{
+            btnSnacks.isHidden = false
+            lblsnacks.isHidden = false
+        }else{
+            btnDairy.isHidden = false
+            lbldairy.isHidden = false
+            btnBread.isHidden = false
+            lblbread.isHidden = false
+            btnFruitsAndVegs.isHidden = false
+            lblfruits.isHidden = false
+            btnFoodCupboard.isHidden = false
+            lblfoodcup.isHidden = false
+            btnFrozenFood.isHidden = false
+            lblfrozen.isHidden = false
+            btnMeat.isHidden = false
+            lblmeat.isHidden = false
+            btnDrinks.isHidden = false
+            lbldrinks.isHidden = false
+            btnSnacks.isHidden = false
+            lblsnacks.isHidden = false
+        }
+        //self.newsCellDelegate?.searchTextDidChanged(text: searchText)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.serachMe.endEditing(true)
+        self.newsCellDelegate?.searchButtonClicked()
     }
     
 

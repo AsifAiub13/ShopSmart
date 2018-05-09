@@ -363,7 +363,22 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="btnBread" destination="6o6-TY-WbE" id="jXA-dB-qkO"/>
                                     <outlet property="btnDairy" destination="GCi-JK-xtU" id="NGt-4e-Vn3"/>
+                                    <outlet property="btnDrinks" destination="tOG-hc-ql9" id="Ha1-ct-Wdc"/>
+                                    <outlet property="btnFoodCupboard" destination="wsO-Xh-EBZ" id="gyh-OA-3Yd"/>
+                                    <outlet property="btnFrozenFood" destination="o97-P9-T2L" id="hEs-1n-yur"/>
+                                    <outlet property="btnFruitsAndVegs" destination="4pR-QZ-yVZ" id="ktM-be-vLH"/>
+                                    <outlet property="btnMeat" destination="kHf-eD-qgP" id="ZSK-Me-Z0G"/>
+                                    <outlet property="btnSnacks" destination="saa-W1-lGx" id="eEL-kS-9Wx"/>
+                                    <outlet property="lblbread" destination="fiZ-6w-Ryy" id="O7i-ut-hVC"/>
+                                    <outlet property="lbldairy" destination="Q2C-Cu-PF8" id="iBc-t7-u9J"/>
+                                    <outlet property="lbldrinks" destination="xgJ-Wb-oH0" id="zW5-wq-x31"/>
+                                    <outlet property="lblfoodcup" destination="o55-Jj-FpM" id="MjH-JQ-gxP"/>
+                                    <outlet property="lblfrozen" destination="Blr-jL-efK" id="tqV-qz-VfX"/>
+                                    <outlet property="lblfruits" destination="qYB-PS-yjP" id="GfK-xX-7dJ"/>
+                                    <outlet property="lblmeat" destination="8UT-e3-27U" id="5ha-zN-kgR"/>
+                                    <outlet property="lblsnacks" destination="0Qv-LK-nL6" id="fsw-rv-qoM"/>
                                     <outlet property="serachMe" destination="hTO-Eb-fT9" id="uFk-W2-Hff"/>
                                 </connections>
                             </tableViewCell>

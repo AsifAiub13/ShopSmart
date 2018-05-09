@@ -307,4 +307,15 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate,U
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         
     }
+    func searchTextDidChanged(text: String) {
+        if text == "Milk" {
+            
+        }
+    }
+    
+    func searchButtonClicked() {
+        
+    }
+    
+    
 }
