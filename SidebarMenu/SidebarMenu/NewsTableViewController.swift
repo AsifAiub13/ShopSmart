@@ -16,22 +16,6 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate,U
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorColor = UIColor.clear
-        /*button.backgroundColor = .clear
-        button.layer.cornerRadius = 5
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.black.cgColor*/
-        //var check : Bool = UserDefaults.standard.bool(forKey: "LOGGED_IN")
-        //if UserDefaults.standard.bool(forKey: "LOGGED_IN") == false ||  UserDefaults.standard.bool(forKey: "LOGGED_IN") == nil{
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let controller = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
-//            self.present(controller, animated: true, completion: nil)
-//
-//            // Safe Present
-//            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController
-//            {
-//                present(vc, animated: true, completion: nil)
-//
-//            }
         if UserDefaults.standard.bool(forKey: "LOGGEDIN") == false{
             let newView2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
             
@@ -314,7 +298,6 @@ class NewsTableViewController: UITableViewController,NewsTableViewCellDelegate,U
     }
     @objc func onClickAction() {
         let newView2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
-        
         let navCtrl = UINavigationController(rootViewController: newView2)
         navCtrl.navigationBar.barTintColor = UIColor.black
         navCtrl.navigationBar.tintColor = UIColor.white

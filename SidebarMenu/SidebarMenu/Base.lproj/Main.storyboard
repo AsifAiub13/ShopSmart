@@ -3757,7 +3757,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Yogurt" id="HXe-bR-OXM"/>
+                    <navigationItem key="navigationItem" title="Yogurt" id="HXe-bR-OXM">
+                        <barButtonItem key="rightBarButtonItem" image="cart" id="zm1-Ie-M0B">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xnz-mZ-XnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3942,7 +3946,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Eggs" id="S6l-uO-PEa"/>
+                    <navigationItem key="navigationItem" title="Eggs" id="S6l-uO-PEa">
+                        <barButtonItem key="rightBarButtonItem" image="cart" id="h45-ZI-9dD">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTk-q8-VdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4127,7 +4135,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Cheese" id="rhA-2j-o6S"/>
+                    <navigationItem key="navigationItem" title="Cheese" id="rhA-2j-o6S">
+                        <barButtonItem key="rightBarButtonItem" image="cart" id="c1a-ua-uTG">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrV-Qb-jI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4862,6 +4874,7 @@
         <image name="biscuits" width="512" height="512"/>
         <image name="calendar" width="1024" height="1024"/>
         <image name="cannedfood" width="512" height="512"/>
+        <image name="cart" width="24" height="24"/>
         <image name="checked_box.png" width="30" height="30"/>
         <image name="cheese" width="512" height="512"/>
         <image name="chips" width="502" height="502"/>
