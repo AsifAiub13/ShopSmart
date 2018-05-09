@@ -24,6 +24,7 @@
 		8D31197B20A3311600B69A2F /* baladna milk.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D31197020A3311500B69A2F /* baladna milk.png */; };
 		8D31197D20A331E700B69A2F /* eggs1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D31197C20A331E500B69A2F /* eggs1.png */; };
 		8D31197F20A3321500B69A2F /* eggs2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D31197E20A3321300B69A2F /* eggs2.png */; };
+		8D31198120A3363500B69A2F /* wishIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D31198020A3363400B69A2F /* wishIcon.png */; };
 		8D5562F8209B93180072091B /* MilkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5562F7209B93180072091B /* MilkViewController.swift */; };
 		8D5562FA209B9BC00072091B /* MilkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5562F9209B9BC00072091B /* MilkDetailViewController.swift */; };
 		8D56A3DA209C96B1000EE2B5 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D56A3D9209C96B1000EE2B5 /* CartViewController.swift */; };
@@ -85,6 +86,7 @@
 		8D31197020A3311500B69A2F /* baladna milk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baladna milk.png"; sourceTree = "<group>"; };
 		8D31197C20A331E500B69A2F /* eggs1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eggs1.png; sourceTree = "<group>"; };
 		8D31197E20A3321300B69A2F /* eggs2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eggs2.png; sourceTree = "<group>"; };
+		8D31198020A3363400B69A2F /* wishIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wishIcon.png; sourceTree = "<group>"; };
 		8D5562F7209B93180072091B /* MilkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkViewController.swift; sourceTree = "<group>"; };
 		8D5562F9209B9BC00072091B /* MilkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkDetailViewController.swift; sourceTree = "<group>"; };
 		8D56A3D9209C96B1000EE2B5 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		8DE7CE3220978F6A00BCD8DC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8D31198020A3363400B69A2F /* wishIcon.png */,
 				8D31197C20A331E500B69A2F /* eggs1.png */,
 				8D31197E20A3321300B69A2F /* eggs2.png */,
 				8D31197020A3311500B69A2F /* baladna milk.png */,
@@ -373,6 +376,7 @@
 			files = (
 				8D31197420A3311600B69A2F /* dairylea cheese spread.png in Resources */,
 				8D31196220A3308100B69A2F /* arla organic milk.png in Resources */,
+				8D31198120A3363500B69A2F /* wishIcon.png in Resources */,
 				8D31197320A3311600B69A2F /* baladna sheep yogurt.png in Resources */,
 				8D31197A20A3311600B69A2F /* dandy airan.png in Resources */,
 				8D31197F20A3321500B69A2F /* eggs2.png in Resources */,
