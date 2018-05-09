@@ -11,6 +11,14 @@ import UIKit
 class PaymentAddressViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate {
     
     
+    @IBOutlet weak var txtzip: UITextField!
+    @IBOutlet weak var txtcity: UITextField!
+    @IBOutlet weak var txtcountry: UITextField!
+    @IBOutlet weak var txttelephone: UITextField!
+    @IBOutlet weak var txtaddress2: UITextField!
+    @IBOutlet weak var txtaddress1: UITextField!
+    @IBOutlet weak var txtlname: UITextField!
+    @IBOutlet weak var txtfname: UITextField!
     @IBOutlet weak var pickerView: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +26,30 @@ class PaymentAddressViewController: UIViewController,UIPickerViewDelegate,UIPick
         pickerView.delegate = self
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        txtfname.delegate = self
+        txtfname.tag = 0
+        txtfname.returnKeyType = UIReturnKeyType.next
+        txtlname.delegate = self
+        txtlname.tag = 1
+        txtlname.returnKeyType = UIReturnKeyType.next
+        txtaddress1.delegate = self
+        txtaddress1.tag = 2
+        txtaddress1.returnKeyType = UIReturnKeyType.next
+        txtaddress2.delegate = self
+        txtaddress2.tag = 3
+        txtaddress2.returnKeyType = UIReturnKeyType.next
+        txttelephone.delegate = self
+        txttelephone.tag = 4
+        txttelephone.returnKeyType = UIReturnKeyType.next
+        txtcountry.delegate = self
+        txtcountry.tag = 5
+        txtcountry.returnKeyType = UIReturnKeyType.next
+        txtcity.delegate = self
+        txtcity.tag = 6
+        txtcity.returnKeyType = UIReturnKeyType.next
+        txtzip.delegate = self
+        txtzip.tag = 7
+        txtzip.returnKeyType = UIReturnKeyType.done
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool{
@@ -33,6 +65,9 @@ class PaymentAddressViewController: UIViewController,UIPickerViewDelegate,UIPick
     
     @objc func dismissKeyboard(){
         view.endEditing(true)
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.view.endEditing(true)
     }
     let pickerComponents = ["Addrees", "Locker"]
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

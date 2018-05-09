@@ -10,12 +10,37 @@ import UIKit
 
 class PaymentDetailsViewController: UIViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var txtCVC: UITextField!
+    @IBOutlet weak var txtExpiry: UITextField!
+    @IBOutlet weak var txtCardNo: UITextField!
+    @IBOutlet weak var txtCardHolder: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        txtCardHolder.delegate = self
+        txtCardHolder.tag = 0
+        txtCardHolder.returnKeyType = UIReturnKeyType.next
+        txtCardNo.delegate = self
+        txtCardNo.tag = 1
+        txtCardNo.returnKeyType = UIReturnKeyType.next
+        txtExpiry.delegate = self
+        txtExpiry.tag = 2
+        txtExpiry.returnKeyType = UIReturnKeyType.next
+        txtCVC.delegate = self
+        txtCVC.tag = 3
+        txtCVC.returnKeyType = UIReturnKeyType.done
     }
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else{
+            textField.resignFirstResponder()
+            return true;
+        }
+        return false
+    }
     @objc func dismissKeyboard(){
         view.endEditing(true)
     }

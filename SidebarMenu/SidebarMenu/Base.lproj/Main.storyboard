@@ -1799,7 +1799,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqC-fg-reE">
+                            <textField opaque="NO" tag="-1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqC-fg-reE">
                                 <rect key="frame" x="16" y="162" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -1895,6 +1895,14 @@
                     <navigationItem key="navigationItem" id="jcT-LS-RrO"/>
                     <connections>
                         <outlet property="pickerView" destination="I7O-bb-SwM" id="9gB-OM-3X8"/>
+                        <outlet property="txtaddress1" destination="v0c-ys-Ayb" id="NuJ-bS-vaU"/>
+                        <outlet property="txtaddress2" destination="gtZ-ZJ-iex" id="ety-gm-fG6"/>
+                        <outlet property="txtcity" destination="caj-tH-xkO" id="HR4-8R-IhZ"/>
+                        <outlet property="txtcountry" destination="MkO-zy-dB3" id="VX9-ck-fqQ"/>
+                        <outlet property="txtfname" destination="y8a-u2-8MV" id="Dd9-uA-HPq"/>
+                        <outlet property="txtlname" destination="zqC-fg-reE" id="DIB-7C-q39"/>
+                        <outlet property="txttelephone" destination="W3M-ML-pG0" id="rnR-pn-77A"/>
+                        <outlet property="txtzip" destination="ugg-Gx-s1h" id="SfL-4g-pIm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UnH-HB-u9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2017,6 +2025,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ePF-HR-cUy"/>
+                    <connections>
+                        <outlet property="txtCVC" destination="6hX-1g-jn3" id="kKv-YM-efG"/>
+                        <outlet property="txtCardHolder" destination="Wxj-lz-SD4" id="nn3-tE-95p"/>
+                        <outlet property="txtCardNo" destination="lv5-rb-688" id="wJg-sg-kEY"/>
+                        <outlet property="txtExpiry" destination="Uut-zC-Ml0" id="ghU-1x-MqP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qxo-0d-eUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
